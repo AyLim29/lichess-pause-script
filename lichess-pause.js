@@ -80,7 +80,7 @@
             const oppTimeSeconds = getTimeSeconds(oppTime.textContent)
             const pauseAtSeconds = getTimeSeconds(pausedAt)
 
-            if ((pauseAtSeconds + 15 - oppTimeSeconds) > 15) {
+            if ((pauseAtSeconds + 15 - oppTimeSeconds) >= 15) {
                 const elements = document.querySelectorAll('*');
                 elements.forEach(el => {
                     if (isAddMoreButton(el)) {
